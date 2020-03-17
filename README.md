@@ -264,9 +264,30 @@ Strconv package converts to and from string representations of basic data types
 \- FormatFloat(f, fmt, prec, bitSize)  
 \- ParseFloat(s, bitSize)  
 
-
-
-#### Constants 
+#### Constants
+Constant => Expression whose value is known at compile time  
+Type is inferred from the RHS  
+<pre>
+const x = 1.3 
+const (
+  y = 4 
+  z = "Hi"
+)
+</pre>  
+iota is a function to generate a set of related but distinct constants  
+Like an enumerated type in other languages  
+Example  
+<pre>
+type Grades int 
+const ( 
+  A Grades = iota 
+  B
+  C
+  D
+  E
+  F
+)
+</pre>  
 
 #### Control Flow 
 
