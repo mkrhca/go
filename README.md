@@ -26,7 +26,9 @@ Go select is used to enable synchronization
 2. tar -C /usr/local -xzf go1.14.linux-amd64.tar.gz  
 3. echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile  
 4. source /etc/profile  
-5. cat > hello.go <<EOF 
+5. Create hello.go 
+<pre>
+cat hello.go
 package main  
 
 import "fmt"  
@@ -34,7 +36,7 @@ import "fmt"
 func main() {  
         fmt.Printf("hello, world\n")  
 }  
-EOF  
+</pre.  
 6. go build hello.go  
 7. ./hello 
 
