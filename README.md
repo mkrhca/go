@@ -121,6 +121,36 @@ ptr := new(int)
 </pre>
 
 #### Variable Scope 
+The places in code where a variable can be accessed  
+<pre>
+var x = 4 
+
+func f() {
+  fmt.Printf("%d", x)
+}
+func g() { 
+  fmt.Printf("%d", x)
+}
+</pre>  
+
+<pre>
+func f() {
+  var x = 4 
+  fmt.Printf("%d", x)
+}
+func g() { 
+  fmt.Printf("%d", x)
+}
+</pre>  
+
+Variable scoping is done using blocks  
+Implicilt Blocks 
+\- Universe Block => all go source  
+\- Package Block => all source in a package  
+\- File Block => all source in a file  
+\- if, for, switch statements => all code inside the statement  
+\- Clause in switch or select => individual clauses each get a block  
+Lexical Scoping using blocks  
 
 
 #### Deallocating Memory 
