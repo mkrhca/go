@@ -36,7 +36,7 @@ import "fmt"
 func main() {  
         fmt.Printf("hello, world\n")  
 }  
-</pre.  
+</pre>
 6. go build hello.go  
 7. ./hello 
 
