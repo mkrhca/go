@@ -187,7 +187,10 @@ Compiler determines stack vs heap
 Garbage collection in the background  
 
 #### Comments and Printing 
-Single line comments //This is a comment  
+Single line comments 
+<pre>
+//This is a comment  
+</pre>  
 Block Comments  
 <pre>
 /* comment 1 
@@ -207,6 +210,33 @@ fmt.Printf("Hi %s", x)
 
 
 #### Ints, Floats, Strings 
+Generic int declaration  
+var x int  
+Different lenghts and signs  
+int8, int16, int32, int64  
+uint8, uint16, uint32, uint64  
+Type Conversions  
+This will fail  
+<pre>
+var x int32 = 1 
+var y int16 = 2 
+x = y 
+</pre>
+Convert type with T() operation  
+<pre>
+x = int32(y) 
+</pre>  
+Floating Point  
+float32 => ~6 digits of precision  
+float32 => ~12 digits of precision  
+ASCII and Unicode  
+'A' = 0x41  // ASCII is 8-bit code  
+Unicode is 32 bit character code // 2^32  
+UTF-8 8-bit code, can go upto 32 bit  
+Code point = unicode characters  
+Rune = a code point in Go  
+Strings are read-only  
+String literal is notated by double quotes  
 
 #### String Packages  
 
