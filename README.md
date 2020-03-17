@@ -443,28 +443,71 @@ sli = append(sli, 100)
 </pre>
 
 #### Hash Tables
-
+Contains key/value pairs  
+Faster lookup than lists  
+Arbitary keys  
+May have collisions  
 
 #### Maps 
+Go lang implementation of hash table  
+<pre>
+var idMap map[string][int] //string = key type, int = value type 
+idmap = make(map[string]int) 
+</pre>
+Map Literal  
+<pre>
+idMap := map[string]int {"joe": 123 } 
+</pre>
+Accessing Maps  
+<pre>
+fmt.Printf(idMap["joe"]) 
+idMap["jane"] = 345 
+delete(idMap, "joe")
+</pre>
+Map Functions  
+<pre>
+id, p := idMap["joe"]
+// id is value, p is presence of key (boolean) 
+fmt.Printf(len(idMap)) // length of map 
 
+// Iterating 
+for key, val := range idMap { 
+  fmt.Println(key. val) 
+}
+</pre>
 
 #### Structs
 
+<pre>
+
+</pre>
 
 #### Assessments 
 
 
 #### RFCs
 
+<pre>
+
+</pre>
 
 #### JSON
 
+<pre>
+
+</pre>
 
 #### File Access, ioutil
 
+<pre>
+
+</pre>
 
 #### File Access, os 
 
+<pre>
+
+</pre>
 
 #### Assessments 
 
