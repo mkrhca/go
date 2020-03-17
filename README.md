@@ -65,27 +65,37 @@ go test - runs tests (files ending with _test.go)
 #### Variables 
 Naming 
 Dont use keywords  
-Variables must have a name and a type 
-All variables must be declared 
-Eg: var x int  
-Eg: var x, y int  
-Types: integer, float, strings
+Variables must have a name and a type  
+All variables must be declared  
+<pre>  
+var x int  
+var x, y int  
+</pre>
+Types: integer, float, strings  
 Defining an alias (alternate name) for a type  
-Eg: type Celsius float64  
-Eg: type IDnum int  
-Eg: var temp Celsius 
-Eg: var id IDnum 
-Initializing variables while declaring 
-Eg: var int x = 100 
-Eg: var x = 100 
-Initializing variables after declaring 
-Eg: var x int 
-Eg: x = 100
-Uninitialized variables will have zero value 
-Short variable declaration 
-Can perform declaration and initialization together 
+<pre>
+type Celsius float64  
+type IDnum int  
+var temp Celsius   
+var id IDnum  
+</pre>
+Initializing variables while declaring  
+<pre>
+var int x = 100  
+var x = 100   
+</pre>
+Initializing variables after declaring   
+<pre>
+var x int  
+x = 100  
+</pre>
+Uninitialized variables will have zero value   
+Short variable declaration   
+Can perform declaration and initialization together  
 Can only do this inside a function  
-Eg: x := 100 
+<pre>
+x := 100   
+</pre>  
 
 #### Assessment 
 Download and install the Go tools on your machine. Write a Go program to print “Hello, world!” on the screen. Compile and run the program.  
