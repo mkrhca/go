@@ -423,10 +423,24 @@ Slice Literals
 sli := []int{1, 2, 3}
 </pre>
 
-
-
 #### Variable Slices 
-
+make() creates a slice (and array)  
+2-argument version: specify type and length/capacity  
+<pre>
+sli = make([]int, 10) 
+</pre>
+3-argument version: specify type, length and capacity  
+<pre>
+sli = make([]int, 10, 15) 
+</pre>  
+Append  
+\- Adds elements to the end of a slice  
+\- Inserts into underlying array  
+\- Increases size of array if necessary  
+<pre>
+sli = make([]int, 0, 3)
+sli = append(sli, 100)
+</pre>
 
 #### Hash Tables
 
