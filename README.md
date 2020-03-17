@@ -401,6 +401,28 @@ for i, v range x {
 </pre>  
 
 #### Slices 
+Slice is an window on an underlying array  
+Variable size, up to the whole array  
+Every slice has 3 properties 
+1. pointer - indicates the start of the slice  
+2. length - number of elements in the slice  
+3. capacity - maximum number of elements in the slice  
+<pre>
+arr := [...]string{"a", "b", "c", "d", "e", "f", "g"}
+s1 := arr[1:3]
+s2 := arr[2:5]  
+</pre>  
+len() and cap() functions  
+<pre>
+a1 := [3]string{"a", "b", "c"} 
+slil := a1[0:1]
+fmt.Printf(len(slil), cap(slil))
+</pre>
+Slice Literals  
+<pre>
+sli := []int{1, 2, 3}
+</pre>
+
 
 
 #### Variable Slices 
