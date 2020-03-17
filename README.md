@@ -46,7 +46,7 @@ Workspace contains 3 sub-directories
 - source
 - package 
 - bin  
-The workspace directory is defined by the GOPATH environment variable  
+The workspace directory is defined by the GOPATH environment variable   
 A package is a group of related source code files  
 Each package can be imported by other packages  
 There must be one package called main where execution begins  
