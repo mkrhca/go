@@ -144,7 +144,7 @@ func g() {
 </pre>  
 
 Variable scoping is done using blocks  
-Implicilt Blocks 
+Implicilt Blocks  
 \- Universe Block => all go source  
 \- Package Block => all source in a package  
 \- File Block => all source in a file  
