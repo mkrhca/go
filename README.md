@@ -477,10 +477,33 @@ for key, val := range idMap {
 </pre>
 
 #### Structs
+Aggregate data type  
+Groups together other objects of arbitary type  
+
 
 <pre>
+type struct Person {
+  name string 
+  addr string 
+  phone string 
+}
 
+var p1 Person 
+
+p1.name = "joe"
+x = p1.addr
 </pre>
+Initializing structs  
+Using new() function  
+Initializes fields to zero 
+<pre>
+p1 := new(Person) 
+</pre>
+Using struct literals  
+<pre>
+p1 := Person(name: "joe", addr: "a street",
+      phone: "123")
+</pre>  
 
 #### Assessments 
 
