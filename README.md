@@ -168,7 +168,23 @@ This is error-prone but fast
 In interpreted language, deallocation of memory is done by the interpreter  
 
 #### Garbage Collection 
+Hard to determine when a variable is no longer in use  
+Example:  
+<pre> 
+func foo() *int { 
+  x := 1 
+  return &x // returns pointer to xx  
+}
 
+func main() { 
+  var y *int 
+  y = foo() 
+  fmt.Print("%d", *y)
+}
+</pre>  
+Go is a compiled language which enables garbage collection  
+Compiler determines stack vs heap  
+Garbage collection in the background  
 
 #### Comments and Printing 
 
