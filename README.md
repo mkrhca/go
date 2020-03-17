@@ -93,7 +93,7 @@ Download and install the Go tools on your machine. Write a Go program to print â
 #### Pointers 
 Pointer is an address to data in memory  
 & operator returns the address of a variable/function  
-* operator returns data at an address (dereferencing)  
+\* operator returns data at an address (dereferencing)  
 Example
 <pre>
 var x int = 1 
