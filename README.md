@@ -87,5 +87,50 @@ Can perform declaration and initialization together
 Can only do this inside a function  
 Eg: x := 100 
 
+#### Assessment 
+Download and install the Go tools on your machine. Write a Go program to print “Hello, world!” on the screen. Compile and run the program.  
+
+#### Pointers 
+Pointer is an address to data in memory  
+& operator returns the address of a variable/function  
+* operator returns data at an address (dereferencing)  
+Example
+<pre>
+var x int = 1 
+var y int 
+var ip *int // ip is pointer to int 
+ip = &x // ip now points to x 
+y = *ip // y is now 1 
+</pre>
+new() function creates a variable and return a pointer to that variable 
+variable is initialized to zero 
+Example
+<pre>
+ptr := new(int) 
+*ptr = 3 
+</pre>
+
+#### Variable Scope 
+
+
+#### Deallocating Memory 
+
+
+#### Garbage Collection 
+
+
+#### Comments and Printing 
+
+#### Ints, Floats, Strings 
+
+#### String Packages  
+
+#### Constants 
+
+#### Control Flow 
+
+#### 
+
+
 
 
