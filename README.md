@@ -45,7 +45,7 @@ Your Go source files and other files will go in this workspace directory
 Workspace contains 3 sub-directories 
 - source
 - package 
-- bin 
+- bin  
 The workspace directory is defined by the GOPATH environment variable  
 A package is a group of related source code files  
 Each package can be imported by other packages  
