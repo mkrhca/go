@@ -239,6 +239,32 @@ Strings are read-only
 String literal is notated by double quotes  
 
 #### String Packages  
+Unicode Package provides a set of functions to test categories of runes  
+\- IsDigit(r rune)  
+\- IsSpace(r rune)  
+\- IsLetter(r rune)  
+\- IsLower(r rune)  
+\- IsPunct(r rune)  
+Some functions perform conversions  
+\- ToUpper(r rune)  
+\- ToLower(r rune)  
+Strings package provides functions to manipulate UTF-8 encoded strings  
+String search functions  
+\- Compare(a,b)  
+\- Contains(s, substr)  
+\- HasPrefix(s, prefix)  
+\- Index(s, substr)  
+String Manipulation  
+\- Replace(s, old, new, n)  
+\- ToLower(s)  
+\- ToUpper(s)  
+\- TrimSpace(s)  
+Strconv package converts to and from string representations of basic data types  
+\- Atoi(s)  
+\- FormatFloat(f, fmt, prec, bitSize)  
+\- ParseFloat(s, bitSize)  
+
+
 
 #### Constants 
 
