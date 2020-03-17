@@ -152,9 +152,20 @@ Implicilt Blocks
 \- Clause in switch or select => individual clauses each get a block  
 Lexical Scoping using blocks  
 
-
 #### Deallocating Memory 
-
+Stacks vs Heap  
+Stack - Area of memory dedicated to function calls  
+\- Local variables are stored here  
+\- Deallocated after function completes  
+Heap - Persistent region of the memory  
+Data on heap must be deallocated explicitly on languages like C  
+Example:  
+<pre>
+x = malloc(32); 
+free(x);
+</pre>  
+This is error-prone but fast  
+In interpreted language, deallocation of memory is done by the interpreter  
 
 #### Garbage Collection 
 
