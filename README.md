@@ -187,6 +187,24 @@ Compiler determines stack vs heap
 Garbage collection in the background  
 
 #### Comments and Printing 
+Single line comments //This is a comment  
+Block Comments  
+<pre>
+/* comment 1 
+   comment 2 */
+</pre> 
+Printing  
+<pre>
+fmt.Printf("Hi") 
+x := "Joe" 
+fmt.Printf("Hi " + x) 
+</pre>  
+Format strings 
+<pre>
+x := "Joe"
+fmt.Printf("Hi %s", x)
+</pre>  
+
 
 #### Ints, Floats, Strings 
 
