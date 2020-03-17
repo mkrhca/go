@@ -290,6 +290,80 @@ const (
 </pre>  
 
 #### Control Flow 
+if statement  
+<pre>
+if x > 5 { 
+  fmt.Printf("Hii\n")
+}
+</pre>
+for loops  
+<pre>
+for i=0; i<10; i++ {
+  fmt.Printf("hi ")
+}
+
+i = 0 
+for i < 10 { 
+  fmt.Printf("hi ") 
+  i++ 
+}
+
+for { 
+  fmt.Printf("hi ") // infinite loop 
+}
+</pre>  
+Switch/Case  
+Breaks automatically when matched  
+<pre>
+switch x {
+case 1:
+  fmt.Printf("case 1")
+case 2:
+  fmt.Printf("case 2")
+default: 
+  fmt.Printf("nocase")
+}
+</pre>  
+Tagless Switch  
+<pre>
+switch {
+case x > 1:
+  fmt.Printf("case 1")
+case x < -1:
+  fmt.Printf("case 2")
+default: 
+  fmt.Printf("nocase")
+}
+</pre>  
+Break and Continue  
+<pre>
+i := 0 
+for i < 10 { 
+  i++ 
+  if i == 5 { break } 
+  fmt.Printf("hi ")
+}
+</pre>  
+<pre>
+i := 0 
+for i < 10 { 
+  i++ 
+  if i == 5 { continue } 
+  fmt.Printf("hi ")
+}
+</pre>  
+Scan 
+\- Scan reads user input  
+\- Takes a pointer as an argument  
+\- Typed data is written to pointer  
+\- Returns number of scanned items  
+<pre>
+var appleNum int 
+
+fmt.Printf("Number of apples?") 
+num, err := fmt.Scan(&appleNum) 
+fmt.Printf(appleNum) 
+</pre>
 
 #### 
 
