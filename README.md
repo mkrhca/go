@@ -548,8 +548,23 @@ err := json.Unmarshal(barr, &p2)
 </pre>
 
 #### File Access, ioutil
-
+Linear access, not random access  
+Basic operations  
+\- Open => get handle for access  
+\- Read => read bytes into []byte  
+\- Write => write []byte into file  
+\- Close => release handle  
+\- Seek => move read/write head  
+ioutil package - "io/ioutil"  
+Explicit open/close not required  
+Large files cause a problem, it reads into main memory  
 <pre>
+// returns data (byte array) and error (if any)
+dat, e := ioutil.ReadFile("test.txt") 
+
+// WriteFile 
+dat = "Hello World"
+err := ioutil.WriteFile("outfile.txt", dat, 0777)
 
 </pre>
 
