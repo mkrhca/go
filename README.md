@@ -522,9 +522,29 @@ http.Get(www.abc.com)
 net.Dial("tcp", "example.com:80")  
 
 #### JSON
-
+JSON Properties  
+\- All unicode  
+\- Human-readable  
+\- Fairly compact representation  
+\- Types can be combined recursively  
+(Array of structs, struct in struct)  
+JSON Marshalling  
+JSON Marshalling is generating JSON object from go objects  
+Marshal() returns JSOn representation as []byte (byte array)  
+Unmarshal() converts a JSON []byte into a Go object  
+Pointer to a Go object is passed to Unmarshal()  
+Go object should fit JSON []byte 
 <pre>
+type struct Person {
+  name string 
+  addr string 
+  phone string 
+}
 
+json.Marshal(p1)
+
+var p2 Person 
+err := json.Unmarshal(barr, &p2) 
 </pre>
 
 #### File Access, ioutil
