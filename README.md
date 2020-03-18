@@ -52,13 +52,13 @@ Each package can be imported by other packages
 There must be one package called main where execution begins  
 
 #### Go Tool 
-Go tool searches GOROOT and GOPATH to find imported packages 
+Go tool searches GOROOT and GOPATH to find imported packages  
 go build - compiles the program  
-go build creates an executable for the main package 
-go doc - prints documentation for the package 
+go build creates an executable for the main package  
+go doc - prints documentation for the package  
 go fmt - formats source code files  
 go get - downloads packages and installs them  
-go list - list all installed packages 
+go list - list all installed packages  
 go run - compiles the go file and runs the executable  
 go test - runs tests (files ending with _test.go)
 
